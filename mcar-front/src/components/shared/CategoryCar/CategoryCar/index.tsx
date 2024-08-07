@@ -1,0 +1,1 @@
+export { SecCollectionCar } from './CategoryCar'

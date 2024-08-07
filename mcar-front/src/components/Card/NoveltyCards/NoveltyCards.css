@@ -1,0 +1,25 @@
+.cars-title {
+    font-family: "Poppins";
+    font-size: 40px;
+  }
+  
+  .cars-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 var(--padding-normal);
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .cars-header-wrapper {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cars-title {
+      font-size: 30px; 
+    }
+  }
+  

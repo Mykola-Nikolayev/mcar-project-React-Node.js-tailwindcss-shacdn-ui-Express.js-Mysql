@@ -1,0 +1,29 @@
+.brand-cars-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.brand-cars-title {
+    font-family: "Poppins";
+    font-size: 40px;
+}
+
+.brand-cars-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px var(--padding-normal);
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .brand-cars-title {
+        font-size: 30px;
+    }
+    
+    .brand-cars-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

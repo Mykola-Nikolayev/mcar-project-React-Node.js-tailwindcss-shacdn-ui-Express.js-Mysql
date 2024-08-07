@@ -1,0 +1,77 @@
+.home-page-wrapper {
+  padding-top: 2rem;
+  text-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-end; /* Aligne les éléments en bas de façon verticale */
+  align-items: flex-start; /* Aligne les éléments à gauche de façon horizontale */
+}
+
+.home-page-text-wrapper {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.home-page-text-wrapper p {
+  margin: 0;
+  font-size: 125px;
+  line-height: 1;
+  color: #fff;
+}
+
+.home-page-text-wrapper .Title-site {
+  margin-bottom: 0px; /* Réduit l'espace entre les deux div à 10 pixels */
+}
+
+
+.home-page-buttons-container {
+  margin-bottom: 16%;
+  font-size: 1.1em;
+  z-index: 2;
+}
+
+.home-page-button {
+  background-color: transparent!important;
+  border: 1.2px solid #fff!important;
+  color: #fff!important;
+  font-size: 1em!important;
+}
+
+.home-page-button:hover {
+  border: 1.2px solid #696969!important;
+  background-color: rgba(0, 0, 0, 0.3)!important;
+  transition: ease 0.2s!important;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .brand-car-wrepper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+/* Médias pour les écrans plus grands que le MacBook Air de 13 pouces */
+@media only screen and (max-width: 1600px) {
+  .Title-site {
+    font-size: 90px; /* Taille de police pour les écrans plus petits */
+  }
+
+  .container-title {
+    margin-left: 50px; /* Réinitialise la marge pour les écrans plus petits */
+  }
+}

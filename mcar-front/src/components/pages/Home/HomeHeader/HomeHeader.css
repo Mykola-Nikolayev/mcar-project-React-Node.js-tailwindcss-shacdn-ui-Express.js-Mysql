@@ -1,0 +1,101 @@
+/* HomeHeader.css */
+
+.home-header-wrapper {
+  padding: 0 var(--padding-xl);
+  padding-left: 11rem;
+  height: calc(100vh - 92px);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-end; /* Aligne les éléments en bas de façon verticale */
+}
+
+.home-header-text-wrapper {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  opacity: 0; /* Cache initialement le texte */
+  transform: translateY(20px); /* Commence un peu plus bas */
+  animation: fadeInUp 1s forwards;
+}
+
+.home-header-text-wrapper p {
+  margin: 0;
+  font-size: 125px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.home-header-text-wrapper .Title-site {
+  margin-bottom: 0px; /* Réduit l'espace entre les deux div à 10 pixels */
+}
+
+.home-header-buttons-container {
+  margin-bottom: 5rem;
+  font-size: 1.1em;
+  z-index: 2;
+  opacity: 0; /* Cache initialement le bouton */
+  transform: translateY(20px); /* Commence un peu plus bas */
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.75s; /* Réduit le délai à 0.75 secondes */
+}
+
+.home-header-button {
+  background-color: transparent !important;
+  border: 1.2px solid #fff !important;
+  color: #fff !important;
+  font-size: 1em !important;
+  border-radius: 11px!important;
+}
+
+.home-header-button:hover {
+  border: 1.2px solid #696969 !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transition: ease 0.2s !important;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-header-text-wrapper .line1 {
+  animation-delay: 0.25s; /* Attente de 0.25 secondes pour "Esprit" */
+}
+
+.home-header-text-wrapper .line2 {
+  animation-delay: 0.5s; /* Attente de 0.5 secondes pour "d'équipe" */
+}
+
+/* Médias pour les écrans plus grands que le MacBook Air de 13 pouces */
+@media only screen and (max-width: 1600px) {
+  .Title-site {
+    font-size: 90px; /* Taille de police pour les écrans plus petits */
+  }
+
+  .container-title {
+    margin-left: 50px; /* Réinitialise la marge pour les écrans plus petits */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-header-wrapper {
+    padding: 0 var(--padding-sm);
+    overflow-x: hidden;
+  }
+
+  .home-header-text-wrapper p {
+    margin: 0;
+    font-size: 70px;
+  }
+
+  .home-header-button {
+    border-radius: 11px!important;
+  }
+}
+
+
+
+
